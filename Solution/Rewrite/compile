@@ -1,0 +1,1 @@
+g++ HireMe.cpp -o main --std=c++11

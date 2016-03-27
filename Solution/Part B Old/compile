@@ -1,0 +1,2 @@
+g++ -D_MP_INTERNAL -D_AMD64_ -D_USE_THREAD_LOCAL -DNDEBUG -D_EXTERNAL_RELEASE  -fvisibility=hidden -c -mfpmath=sse -msse -msse2 -fopenmp -O3 -D _EXTERNAL_RELEASE -fomit-frame-pointer -fno-strict-aliasing -D_LINUX_ -fPIC -D_LINUX_  -o main.o  -I../../../z3/src/api -I../../../z3/src/api/c++ main.cpp --std=c++11
+g++ -o main  main.o  ../../../z3/build/libz3.so -lpthread  -fopenmp -lrt
